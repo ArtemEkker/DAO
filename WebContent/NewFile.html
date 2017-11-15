@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="AddUser" method="get">
+		<p>Enter nickname<input type="text" name="nickname" required></p>
+		<p>Enter email<input type="text" name="email" required></p>
+		<p>Enter phone number<input type="text" name="phone" required></p>
+		<input type="submit" value="Отправить">
+	</form>
+
+	<form action="UpdateUser" method="get">
+		<p>Enter your nick<input type="text" name="nicknamehave" required></p>
+		<p>Enter nick you want<input type="text" name="nicknamewant" required></p>
+		<p>Enter you email<input type="text" name="emailhave" required></p>
+		<p>Enter email you want<input type="text" name="emailwant" required></p>
+		<p>Enter your phone number<input type="text" name="phonehave" required></p>
+		<p>Enter phone number you want<input type="text" name="phonewant" required></p>
+		<input type="submit" value="Изменить">
+	</form>
+
+	<form action="DeleteUser" method="get">
+		<p>Enter your nick<input type="text" name="nicknamehavetodel" required></p>
+		<p>Enter you email<input type="text" name="emailhavetodel" required></p>
+		<p>Enter your phone number<input type="text" name="phonehavetodel" required></p>
+		<input type="submit" value="Удалить">
+	</form>
+	
+	
+
+</body>
+</html>
