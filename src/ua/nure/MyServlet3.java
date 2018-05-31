@@ -1,15 +1,12 @@
 package ua.nure;
 
-import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-
+import java.io.IOException;
 import java.sql.*;
 /**
  * Servlet implementation class MyServlet
@@ -60,8 +57,7 @@ public class MyServlet3 extends HttpServlet {
 			}
 			String sql1="Select Name,rating FROM Game ORDER BY rating";
 			ResultSet rs = null;
-			try {
-				rs = st.executeQuery(sql1);
+			try {				rs = st.executeQuery(sql1);
 			} catch (SQLException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

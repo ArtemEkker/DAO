@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="mongo-java-driver-r3.6">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/bson/src/main" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/bson/src/test/unit" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-async/src/examples" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-async/src/main" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-async/src/test/functional" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-async/src/test/unit" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-core/src/main" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-core/src/test/functional" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver-core/src/test/unit" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver/src/examples" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver/src/main" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver/src/test/functional" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/driver/src/test/unit" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0/util/src/main" />
+      <root url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0" />
+    </SOURCES>
+    <jarDirectory url="file://D:/mongo-java-driver-r3.6.0/mongo-java-driver-r3.6.0" recursive="false" type="SOURCES" />
+  </library>
+</component>

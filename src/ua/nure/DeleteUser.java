@@ -1,50 +1,39 @@
 package ua.nure;
 
-import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * Servlet implementation class DeleteUser
  */
-@WebServlet("/DeleteUser")
+@WebServlet(name = "DeleteUser", urlPatterns = {"/DeleteUser"})
 public class DeleteUser extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public DeleteUser() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+    public DeleteUser() { super(); }
+
+    @Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
-User userdel = new User();
-		
-		userdel.setNicke(request.getParameter("nicknamehavetodel"));
-		userdel.setEmail(request.getParameter("emailhavetodel"));
-		userdel.setPhone(request.getParameter("phonehavetodel"));
-		
+
+
+		//User userdel = new User();
+		User userdel = new User.Builder(request.getParameter("nicknamehavetodel"),request.getParameter("emailhavetodel")).phone("phonehavetodel").build();
+		//userdel.setNicke(request.getParameter("nicknamehavetodel"));
+		//userdel.setPhone(request.getParameter("phonehavetodel"));
+		//userdel.setEmail(request.getParameter("emailhavetodel"));
+
 		MySQLUserDAO.getInctance().deleteUser(userdel);
-		
-		doGet(request, response);
+
+
 	}
 
 }
